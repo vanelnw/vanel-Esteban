@@ -4,26 +4,124 @@
     <meta charset="UTF-8">
     <title>Fork Me! FCC: Test Suite Template</title>
     <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   </head>
 
   <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <div id="main">
     <header id = "header">
-        <img src = "https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png" id = "header-img">
+        <img width="150" height="50" src = "https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png" id = "header-img">
         <nav id = "nav-bar"> 
           <ul>
-            <li><a href = "" class = "nav-link">Features</a></li>
-            <li><a href = "" class = "nav-link">How It Works</a></li>
-            <li><a href = "" class = "nav-link">Pricing</a></li>
+            <li><a href = "#features" class = "nav-link">Features</a></li>
+            <li><a href = "#howItWorks" class = "nav-link">How It Works</a></li>
+            <li><a href = "#pricing" class = "nav-link">Pricing</a></li>
           </ul>
         </nav>
     </header>
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/y8Yv4pnO7qc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <form id = "form">
-      <input type = "email" id = "email" placeholder="Please enter your email:" required>
+    <h1 id="title">Handcrafted, home-made masterpieces</h1>
+   
+    <form id = "form" action="https://www.freecodecamp.com/email-submit">
+      <input type = "email" name = "email" id = "email" placeholder="Please enter your email:" required/>
+      <input type = "submit" id ="submit" placeholder="Get Starter"/>
     </form>
 
+    <div id="features"> 
+      <div class="feature-item">
+        <div class="icon">
+          <i class="fa fa-3x fa-fire"></i>
+        </div>
+        
+        <div class="text">
+          <h1>Premium Materials</h1>
+          <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+        </div>
+      </div>
+      <div class="feature-item">
+        <div class="icon">
+          <i class="fa fa-3x fa-truck"></i>
+        </div>
+        <div class="text">
+        <h1>Fast Shipping</h1>
+        <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+      </div>
+      </div>
+      <div class="feature-item">
+        <div class="icon">
+          <i class="fa fa-3x fa-battery-full" color="red" ></i>
+        </div>
+        <div class="text">
+          <h1>Quality Assurance</h1>
+          <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+        </div>
+        
+      </div>
+    </div>
+
+    <div id="howItWorks">
+      <iframe width="560" id="video"
+      height="315" src="https://www.youtube.com/embed/y8Yv4pnO7qc" 
+      title="YouTube video player" 
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen
+      >
+      </iframe>
+    </div>
+  
+
+    <div id="pricing">
+      <div class="pricing-item">
+        <h3 class="title">TENOR TROMBONE</h3>
+        <h1>$600</h1>
+        <p>
+          Lorem ipsum.<br/>
+          Lorem ipsum.<br/>
+          Lorem ipsum dolor.<br/>
+          Lorem ipsum.
+        </p>
+        <button>select</button>
+      </div>
+      <div class="pricing-item">
+        <h3 class="title">BASS TROMBONE</h3>
+        <h1>$600</h1>
+        <p>
+          Lorem ipsum.<br/>
+          Lorem ipsum.<br/>
+          Lorem ipsum dolor.<br/>
+          Lorem ipsum.
+        </p>
+        <button>select</button>
+      </div>
+      <div class="pricing-item">
+        <h3 class="title">VALVE TROMBONE</h3>
+        <h1>$600</h1>
+        <p>
+          Lorem ipsum.<br/>
+          Lorem ipsum.<br/>
+          Lorem ipsum dolor.<br/>
+          Lorem ipsum.
+        </p>
+        <button>select</button>
+      </div>
+    </div>
+
+    <div id="footer">
+      <div>
+        <ul>
+          <li>Privacy</li>
+          <li>Terms</li>
+          <li>Contact</li>
+        </ul>
+        <p>Copyright 2016, Original Trombones</p>
+      </div>
+      
+    </div>
+    
+  </div>
 
     
 
